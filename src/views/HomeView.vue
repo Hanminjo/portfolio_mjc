@@ -18,8 +18,8 @@
     <div id="portfolio">
       <div class="header">포트폴리오</div>
       <div class="list">
-        <div class="item" @click="movePage('portfolio1')" data-aos="zoom-out-right"
-          style="background-image:url(/top.1.jpg)"></div>
+        <div class="item" @click="movePage('/portfolio1')" data-aos="zoom-out-right"
+          style="background-image:url(/portfolio_mjc/top.1.jpg)"></div>
         <div class="item" data-aos="zoom-in-left" style="background-image:url(/top.1.jpg)"></div>
         <div class="item" data-aos="fade-up" data-aos-duration="3000" style="background-image:url(/top.1.jpg)"></div>
         <div class="item" style="background-image:url(/top.1.jpg)"></div>
