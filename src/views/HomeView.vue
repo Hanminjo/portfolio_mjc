@@ -118,7 +118,7 @@ export default defineComponent({
     grid-gap: 10px;
 
     .item {
-      width: 300px;
+      width: 100px;
 
       background-position: center center;
       background-size: cover;
