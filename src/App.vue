@@ -1,22 +1,19 @@
 <template>
   <v-app>
-    <v-app-bar app :color="appBarColor" elevate-on-scroll>
-      <v-toolbar-title>JHM's PORTFOLIO</v-toolbar-title>
-
-      <!-- ABOUT 버튼 추가 -->
-      <v-btn @click="scrollToIntroduce">ABOUT</v-btn>
-      <v-btn @click="scrollToArchiving">Archiving</v-btn>
-      <v-btn @click="scrollToPortfolio">PROJECT</v-btn>
-
-    </v-app-bar>
-
     <v-main>
       <router-view />
     </v-main>
-
   </v-app>
 </template>
-
+<style>
+.text1:hover,
+.text2:hover,
+.text3:hover,
+.text4:hover {
+  color: #441c1c;
+  /* 마우스를 올렸을 때 색상 변경 */
+}
+</style>
 <script>
 export default {
   name: 'App',
@@ -31,6 +28,10 @@ export default {
 
       // Update the app bar color based on the scroll position
       this.appBarColor = scrollPosition > 0 ? 'white' : 'brown';
+    },
+    scrollToTop() {
+      // 맨 위쪽으로 스크롤
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     // ABOUT 버튼 클릭 시 Introduce 섹션으로 스크롤하는 메서드
